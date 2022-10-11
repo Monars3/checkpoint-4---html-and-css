@@ -1,0 +1,460 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------------- */
+* ,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans" , sans-serif;
+    line-height: 1.5;
+    /* font-size: 1.2rem; */
+}
+.container {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+.padding {
+    padding: 2rem 0;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-32 {
+    flex: 0 1 32%;
+}
+.flex-28 {
+    flex: 0 1 28%;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-22 {
+    flex: 0 1 22%;
+}
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+.flex-48 {
+    flex: 0 1 48%;
+}
+.flex-78 {
+    flex: 0 1 78%;
+}
+.flex-wrap {
+    flex-wrap:wrap;
+}
+.text-center {
+    text-align: center;
+    /* font-size: 0.9rem; */
+}
+a {
+    text-decoration: none;
+}
+html {
+    font-size: 16px;
+}
+/* ----------------------- */
+h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+.navbar a {
+    margin-left: 18px;
+    font-size: 1rem;
+    color: gray;
+}
+/* ------------------------ */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)), url(./assets/media/hero-bg.jpg) center;
+    background-size: cover;
+    padding: 6rem 0;
+}
+.hero p {
+    color: rgb(212, 211, 211);
+}
+.get-started {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.get-started ion-icon  {
+    font-size: 3rem;
+    color: #fd5a24;
+    margin-right: -10px;
+    margin-left: -2px;
+}
+.get-started nav{
+    background-color: rgb(39, 30, 30);
+    color: rgb(199, 199, 199);
+    padding: 2px 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 1rem;
+}
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+/* --------------------------------- */
+.active {
+    background-color: #fd5a24;
+    color: #fff;
+    padding: 32px 18px;
+}
+h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.active p {
+    font-size: 0.8rem;
+    padding: 16px 0;
+}
+.active nav {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+.learn-more {
+    color: #fff;
+    display: inline-block;
+    background-color: #fa8c67;
+    border-radius: 12px;
+    padding: 2px 18px;
+}
+.flex-22 ion-icon {
+    font-size: 32px;
+    color: #fd5a24;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.three-boxes {
+    border: 0px solid black;
+    padding: 32px 18px;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+    background-color: #fff;
+}
+.minus-margin {
+    margin-top: -58px;
+    margin-bottom: 42px;
+}
+/* ------------------------------- */
+.video {
+    background-color: rgb(253, 240, 228);
+    font-size: 14px;
+    padding: 36px;
+}
+.flex-40 img {
+    width: 34rem;
+    height: 36rem;
+}
+.video ion-icon {
+    font-size: 2rem;
+    border: 2px solid #e0896c;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: #fff;
+    margin-right: 16px;
+}
+.lorem-margin {
+    margin-top: 18px;
+}
+/* ------------------------ */
+.flex-12 {
+    flex: 0 1 12%;
+}
+.flex-12 img {
+    width: 7rem;
+    margin: 0 1rem;
+}
+/* ------------------------- */
+.services {
+    background-color: rgb(253, 240, 228);
+}
+.services ion-icon {
+    font-size: 1.5rem;
+    border: 0px solid black;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #fd5a24;
+    color: #fff;
+    margin-bottom: -30px;
+    margin-top: 3rem;
+}
+.flex-30 nav {
+    border: 0px solid black;
+    box-shadow: rgba(0,0,0,0.3) 0 0 7px;
+    padding: 32px;
+    background-color: #fff;
+}
+/* -------------------------------- */
+.transparent-bg img{
+    height: auto;
+    width: 100%;
+    width: 600px;
+    height: 300px;
+}
+.position-image {
+    position: relative;
+    margin: 2% 0;
+    margin-top: 5%;
+}
+.position-text {
+    border: 0px solid black;
+    box-shadow: rgba(0,0,0,0.3) 0 0 7px;
+    padding: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;  
+    background-color: rgba(252, 249, 249, 0.8); 
+}
+.testimonial {
+    background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)), url(./assets/media/testimonials-bg.jpg) center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 6rem 10rem;
+}
+.testimonial img {
+    width: 10%;
+    border-radius: 50%;
+    border: 8px solid rgb(121, 120, 120);
+}
+.store-owner {
+    font-size: 1.2rem;
+    color: rgb(197, 196, 196);
+    padding: 0.5rem;
+}
+/* --------------------------------- */
+.portfolio {
+    text-align: center;
+}
+.portfolio h3 {
+    padding-bottom: 1rem;
+}
+.abc {
+    margin: 1rem;
+}
+.abc a{
+    color: black;
+    margin: 1.1rem;
+    font-size: 13px;
+    font-weight: 550;
+}
+.abc a:hover {
+    color: #fd5a24;
+    background: #fccfc0;
+    padding: 5px 12px;
+    border-radius: 14px;
+}
+.portfolio img {
+    width: 100%;
+}
+.margin-img {
+    padding-top: 1.5%;
+}
+/* --------------------------- */
+.team {
+    text-align: center;
+    background-color: rgb(253, 240, 228);
+}
+.team img {
+    width: 100%;
+}
+.team .flex-22 {
+    border: 0px solid red;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.3) 0 0 7px;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+}
+.team .flex-22 p {
+    color: gray;
+}
+/* ----------------------------- */
+.pricing {
+    text-align: center;
+}
+.price-details {
+    border: 1px solid rgb(236, 235, 235);
+    width: 100%;
+    margin: 1rem 0;
+}
+.price-details .same-bg {
+    background-color: rgb(233, 232, 232);
+    padding: 0.7rem 0;
+}
+.price-details p {
+    margin: 1rem 0;
+}
+.same-bg {
+    color:black;
+}
+.same-bg a{
+    color: white;
+    background: #fd5a24;
+    padding: 4px 1rem;
+    border-radius: 6px;
+}
+span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fd5a24;
+}
+.same-bg:hover {
+    background-color: #fd5a24;
+    color: #fff;
+}
+/* ----------------------------- */
+.contact {
+    text-align: center;
+}
+.contact-boxes {
+    max-width: 55rem;
+    margin: 0 auto;
+}
+.contact-us div{
+    border: 0px solid black;
+    box-shadow: rgba(0,0,0,0.3) 0 0 7px;
+    padding: 1rem;
+}
+.icons ion-icon {
+    color: #fd5a24;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    /* width: 2rem; */
+    /* height: 2rem; */
+    border-radius: 50%;
+    padding: 0.5rem;
+    /* align-self: flex-start; */
+}
+.icons {
+    align-self: flex-start;
+}
+.contact-us p {
+    font-size: 0.8rem;
+}
+.flex-78  {
+    text-align: start;
+    margin-left: 1rem;
+}
+.flex-78 p {
+    margin-top: 0.3rem;
+}
+/* --------------------- */
+
+.contact form {
+    border: 0px solid black;
+    box-shadow: rgba(0,0,0,0.3) 0 0 7px;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+.form-control {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 12px 16px;
+}
+.btn {
+    padding: 0.6rem 1rem;
+    color: #fff;
+    background: #fd5a24;
+    border: 0px solid #fff;
+}
+/* -------------------------- */
+.subscribe a{
+    color: #fff;
+    background: #fd5a24;
+    padding: 0.4rem 0.6rem;
+    border-radius: 24px;
+    margin-left: -1.8rem;
+}
+.subscribe input {
+    border-radius: 1rem;
+    border: 1.5px solid black;
+    padding: 0.2rem;
+    margin-top: 1rem;
+}
+
+.before-footer {
+    background: #f7ddd4;
+}
+.before-footer .flex-22 p,li{
+    margin-top: 0.5rem;
+}
+/* .before-footer .flex-22  */
+.before-footer div {
+    align-self: flex-start;    
+}
+strong {
+    font-weight: 700;
+}
+.logo ion-icon {
+    border: 0px solid black;
+    border-radius: 50%;
+    padding: 0.4rem;
+    color: white;
+    background-color: #fd5a24;
+}
+.footer span {
+    font-size: 1rem;
+}
